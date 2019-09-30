@@ -1,0 +1,29 @@
+<nav style="margin-bottom: 15px;">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo" style="margin-left: 15px;">{{title}}</a>
+
+      <!-- TRIGGER SIDE NAV -->
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars fa-2x"></i></a>
+
+      <ul class="right hide-on-med-and-down">
+        <li><a routerLink="draw-box" routerLinkActive="active"><i class="fas fa-edit fa-2x"></i></a></li>
+        <li><a routerLink="effect-box" routerLinkActive="active"><i class="fas fa-magic fa-2x"></i></a></li>
+        <li><a routerLink="brick-box" routerLinkActive="active"><i class="fas fa-th fa-2x"></i></a></li>
+        <li><a href="mobile.html"><i class="fas fa-table-tennis fa-2x"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- START SIDE NAV -->
+
+  <ul id="slide-out" class="sidenav">
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+
+  <!-- END SIDE NAV -->
+
+  <router-outlet></router-outlet>

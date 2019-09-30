@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+@mixin fullHeight {
+  height: 100%;
+}
+
+html, body, .full-height {
+  @include fullHeight;
+}
+
+
+.full-width {
+  width: 100%;
+}
+
+#main-div {
+  margin: 0 0 0 0 !important;
+}
+
+#draw-box {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  min-height: 500px;
+  height: fill-available;
+}

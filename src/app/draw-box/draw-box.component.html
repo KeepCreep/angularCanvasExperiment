@@ -1,0 +1,18 @@
+<div class="row full-height">
+  <div id="draw-tools" class="col s12 m2 l2 red lighten-3 full-height">
+    <div class="row">
+      <div class="input-field col s12 m12 l12">
+        <input type="range" id="size" min="1" max="50" [value]="pencilSize" (change)="chooseSize($event)" />
+        <input id="color" id="color" type="color" style="width:100%;height:40px;" [value]="pencilColor"
+          (change)="chooseColor($event)">
+      </div>
+      <div class="input-field col s12 m12 l12">
+
+      </div>
+    </div>
+  </div>
+  <div id="draw-content" class="col s12 m10 l10 red lighten-5 full-height">
+    <canvas id="draw-canvas" (mousemove)="executeDraw($event)" (mousedown)="activePencil()" (mouseup)="inactvePencil()"
+      (mouseleave)="inactvePencil()" #drawCanvas></canvas>
+  </div>
+</div>

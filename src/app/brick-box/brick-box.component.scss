@@ -1,0 +1,35 @@
+#brick-game-score-div {
+  position: absolute;
+  font-size: 2em;
+  font-family: 'Monoton', cursive;
+  color: white;
+  border-radius: 5px;
+  border-style: dashed;
+  border-color: #616161;
+  border-width: 4px;
+  bottom: 50px;
+  left: 50px;
+  opacity: 0.5;
+  z-index: 10;
+  background-color: #bdbdbd;
+  transition: all 2s;
+}
+
+.shakeItLooser {
+  animation: shake 0.5s;
+}
+
+
+@keyframes shake {
+  0% { background-color:#eb9694; transform: translate(1px, 1px) rotate(0deg); }
+  10% { background-color:#e96b69; transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { background-color:#e75351; transform: translate(-3px, 0px) rotate(1deg); }
+  30% { background-color:#e42f2c;transform: translate(3px, 2px) rotate(0deg); }
+  40% { background-color:#e91a16;transform: translate(1px, -1px) rotate(1deg); }
+  50% { background-color:#e41815;transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { background-color:#e70703;transform: translate(-3px, 1px) rotate(0deg); }
+  70% { background-color:#e71714;transform: translate(3px, 1px) rotate(-1deg); }
+  80% { background-color:#e53935;transform: translate(-1px, -1px) rotate(1deg); }
+  90% { background-color:#e64b48;transform: translate(1px, 2px) rotate(0deg); }
+  100% { background-color:#f07371;transform: translate(1px, -2px) rotate(-1deg); }
+}
